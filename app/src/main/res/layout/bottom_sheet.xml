@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:id="@+id/layoutBottomSheet"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/white"
+        app:behavior_peekHeight="90dp">
+
+    <!--header-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/locations"
+            android:textAlignment="center"
+            android:padding="8dp"
+            app:fontFamily="@font/google_sans"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/entry_ticket_price"
+            app:fontFamily="@font/google_sans"
+            android:padding="8dp"
+            android:gravity="end"
+            android:layout_marginRight="8dp"/>
+
+    </LinearLayout>
+
+    <!--for list item view-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnDoneList"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/blue_rounded_shape_background"/>
+
+</LinearLayout>

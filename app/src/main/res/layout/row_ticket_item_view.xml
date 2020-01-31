@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layoutTicketRow"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:clickable="true"
+    android:background="@drawable/group_indicator"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imgSelectedIcon"
+        android:layout_width="30dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_check_mark"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tvLocationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Thamata Cinema"
+        app:fontFamily="@font/google_sans"
+        android:padding="8dp"
+        android:layout_toRightOf="@+id/imgSelectedIcon"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:id="@+id/tvTicketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1000"
+        app:fontFamily="@font/google_sans"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/tvCostUnit"/>
+
+    <TextView
+        android:id="@+id/tvCostUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/price_unit"
+        app:fontFamily="@font/google_sans"
+        android:layout_centerInParent="true"
+        android:padding="8dp"/>
+</RelativeLayout>

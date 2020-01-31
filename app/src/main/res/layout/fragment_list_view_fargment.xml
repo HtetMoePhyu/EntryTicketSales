@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ListViewFargment"
+    android:background="@color/white">
+
+    <!--header-->
+    <LinearLayout
+        android:id="@+id/layoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/locations"
+            android:textAlignment="center"
+            android:padding="8dp"
+            android:textStyle="bold"
+            app:fontFamily="@font/google_sans"
+            android:background="@drawable/border_blue"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/entry_ticket_price"
+            app:fontFamily="@font/google_sans"
+            android:padding="8dp"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/border_blue"/>
+
+    </LinearLayout>
+
+    <!--for list item view-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItemList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutTitle"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="Done"
+        android:textSize="14sp"
+        app:fontFamily="@font/google_sans"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/blue_rounded_shape_background"/>
+
+
+</RelativeLayout>

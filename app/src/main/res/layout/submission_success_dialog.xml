@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/imgThankU"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_thank_you" />
+
+    <TextView
+        android:id="@+id/tvUserNamePayment"
+        tools:text="Htet Moe Phyu"
+        android:fontFamily="@font/google_sans"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Successfully submitted."
+        android:fontFamily="@font/google_sans"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/closePaymentSuccessDialog"
+        android:text="Close"
+        app:fontFamily="@font/google_sans"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_rounded_shape_background"
+        android:textAllCaps="false"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center" />
+</LinearLayout>
